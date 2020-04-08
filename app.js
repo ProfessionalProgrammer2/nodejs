@@ -14,7 +14,7 @@ const readline = require('readline').createInterface({
 
 var fs = require('fs');
 // writeFile function with filename, content and callback function
-fs.writeFile(`./data/${name}.txt`, `you are awesome ${name}`, function (err) {
+fs.writeFile(`${name}.txt`, `you are awesome ${name}`, function (err) {
   if (err) 
   {
       throw err;
